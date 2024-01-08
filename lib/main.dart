@@ -15,39 +15,26 @@ class MyApp extends StatelessWidget {
       home: Scaffold(
         backgroundColor: Colors.teal,
         body: SafeArea(
-          child: Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          child: Column(
             children: <Widget>[
-              Container(
-                height: double.infinity,
-                width: 100.0,
-                color: Colors.red,
+              CircleAvatar(
+                radius: 50.0,      
+                backgroundImage: AssetImage('images/cap_avatar.jpg'),
               ),
-              Column(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  Container(
-                    height: 100.0,
-                    width: 100.0,
-                    color: Colors.yellow,
-                  ),
-                  Container(
-                    height: 100.0,
-                    width: 100.0,
-                    color: Colors.green,
-                  ),
-                ],
+              Text(
+                'Fabricio Saavedra',
+                style: TextStyle(
+                  fontFamily: 'Pacifico',
+                  fontSize: 40.0,
+                  color: Colors.white,
+                  fontWeight: FontWeight.bold,
+                ),
               ),
-              Container(
-                height: double.infinity,
-                width: 100.0,
-                color: Colors.blue,
-              ),
-            ] 
+            ],
+          ),
           ),
         ),
-      ),
-    );
+      );
   }
 }
 
