@@ -23,10 +23,20 @@ class MyApp extends StatelessWidget {
                 width: 100.0,
                 color: Colors.red,
               ),
-              Container(
-                height: 100.0,
-                width: 100.0,
-                color: Colors.yellow,
+              Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Container(
+                    height: 100.0,
+                    width: 100.0,
+                    color: Colors.yellow,
+                  ),
+                  Container(
+                    height: 100.0,
+                    width: 100.0,
+                    color: Colors.green,
+                  ),
+                ],
               ),
               Container(
                 height: double.infinity,
