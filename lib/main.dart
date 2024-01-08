@@ -30,6 +30,16 @@ class MyApp extends StatelessWidget {
                   fontWeight: FontWeight.bold,
                 ),
               ),
+              Text(
+                'Software developer'.toUpperCase(),
+                style: TextStyle(
+                  fontFamily: 'SourceCodePro',
+                  fontSize: 20.0,
+                  color: Colors.teal.shade900,
+                  letterSpacing: 2.5,
+                  fontWeight: FontWeight.w600,
+                ),
+                )
             ],
           ),
           ),
